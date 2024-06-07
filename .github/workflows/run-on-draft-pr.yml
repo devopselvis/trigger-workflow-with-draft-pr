@@ -1,0 +1,11 @@
+name: Run on Draft PR
+on:
+  pull_request:
+    types: [opened]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Say hi
+        run: echo "hi"
